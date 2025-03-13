@@ -30,7 +30,9 @@ IS
     ----------------------------------------------------
 
     v_est_sales_at      NUMBER(13)  := 0;    -- 예상 매출 금액
-    v_est_sales_prft_at NUMBER(13)  := 0;    -- 예상 매출 이익 금액
+    -- v_est_sales_at is used in the variable declaration section but never used in the code
+-- It is declared as:
+v_est_sales_at      NUMBER(13)  := 0;    -- 예상 매출 금액    v_est_sales_prft_at NUMBER(13)  := 0;    -- 예상 매출 이익 금액
     v_est_sales_prft_rt NUMBER(5,2) := 0;    -- 예상 매출 이익 율
 
     v_req_title_txt     VARCHAR2(100) := '';  -- 요청 제목
